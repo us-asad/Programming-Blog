@@ -83,3 +83,18 @@ export const getRelatedPosts = async () => {
 
 	return result.posts;
 }
+
+export const getCategories = async () => {
+	const query = `
+		query getCategories {
+			categories {
+				name
+				slug
+			}
+		}
+	`;
+
+	const result = await request(graphqlAPI, query);
+
+	return result.categories;
+}

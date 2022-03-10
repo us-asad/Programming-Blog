@@ -1,11 +1,16 @@
+import { useState, useEffect } from "react";
+import { getCategories } from "../services";
 import Link from "next/link";
 
-const categories = [
-	{name: "1 category", slug: "firstSlug"},
-	{name: "2 category", slug: "secondSlug"}
-];
-
 export default function Categories() {
+	const [categories,setCategories] = useState([]);
+
+	useEffect(() => {
+		getCategories()
+			.then(res => setCategories(res))
+			.catch(err => console.error("Get Categories Error! ",err));
+	},[]);
+
 	return (
 		<div className="container mx-auto px-10 mb-8">
 			<div className="border-b w-full flex justify-between border-blue-500 py-8">
@@ -17,13 +22,13 @@ export default function Categories() {
 				<div className="hidden md:flex space-3">
 					{categories.map(({slug,name}) => (
 						<Link key={slug} href={`/category/${slug}`}>
-							<span className="mt-2 text-white ml-4 font-semibold cursor-pointer">
+							<a className="mt-2 text-white hover:text-gray-200 transition duration-50 ml-4 font-semibold cursor-pointer">
 								{name}
-							</span>
+							</a>
 						</Link>
 					))}
 				</div>
 			</div>
 		</div>
-	)
+	);
 }
