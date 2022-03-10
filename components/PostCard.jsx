@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function PostCard(props) {
-	console.log(props)
 	const { title, featuredImage: { url: postImageUrl }, slug, author: { photo: { url: authorPhotoUrl }, name: authorName }, excerpt, createdAt } = props;
 
 	return (
