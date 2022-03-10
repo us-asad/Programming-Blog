@@ -15,9 +15,9 @@ export default function Categories() {
 					</span>
 				</Link>
 				<div className="hidden md:flex space-3">
-					{categories.map({slug,name} => (
+					{categories.map(({slug,name}) => (
 						<Link key={slug} href={`/category/${slug}`}>
-							<span className="mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+							<span className="mt-2 text-white ml-4 font-semibold cursor-pointer">
 								{name}
 							</span>
 						</Link>
