@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { PostWidget, Categories } from "../../components";
+import { PostWidget, Categories } from "components";
 
 export default function CategoryPosts() {
 	const router = useRouter();

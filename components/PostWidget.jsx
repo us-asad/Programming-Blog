@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import moment from "moment";
 import Link from "next/link";
 import Image from "next/image";
-import { getRecentPosts, getRelatedPosts } from "../services";
+import { getRecentPosts, getRelatedPosts } from "services";
 
 export default function PostWidget({ categories, slug }) {
 	const [widgetPosts, setWidgetPosts] = useState([]);
