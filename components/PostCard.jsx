@@ -2,8 +2,8 @@ import moment from "moment";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function PostCard(props) {
-	const { title, featuredImage: { url: postImageUrl }, slug, author: { photo: { url: authorPhotoUrl }, name: authorName }, excerpt, createdAt } = props;
+export default function PostCard({ post }) {
+	const { title, featuredImage: { url: postImageUrl }, slug, author: { photo: { url: authorPhotoUrl }, name: authorName }, excerpt, createdAt } = post;
 
 	return (
 		<div className="bg-white shadow-lg rounded-lg p-0 pt-8 lg:p-8 pb-12 mb-8">
