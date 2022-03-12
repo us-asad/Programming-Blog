@@ -19,7 +19,7 @@ export default function PostWidget({ categories, slug }) {
 		}
 	},[slug]);
 
-	if (!slug && !widgetPosts.length) return <></>;
+	if (!widgetPosts.length) return <></>;
 
 	return (
 		<div className="bg-white rounded-lg shadow-lg p-8 mb-8">
