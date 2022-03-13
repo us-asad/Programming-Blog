@@ -37,7 +37,7 @@ export default function CarouselFeaturedPosts() {
 	},[]);
 
 	const leftArrowIcon = (
-    <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-white rounded-full">
+    <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-pink-600 text-white rounded-full">
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 text-indigo w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
       </svg>
@@ -45,7 +45,7 @@ export default function CarouselFeaturedPosts() {
   );
 
   const rightArrowIcon = (
-    <div className="absolute arrow-btn right-0 text-center py-3 cursor-pointer bg-white rounded-full">
+    <div className="absolute arrow-btn right-0 text-center py-3 cursor-pointer bg-pink-600 text-white rounded-full">
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 text-indigo w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
       </svg>
@@ -55,7 +55,6 @@ export default function CarouselFeaturedPosts() {
 	return (
 		<div className="mb-8 container mx-auto">
 			<Carousel
-				showDots
 				autoPlay
 				infinite
 				autoPlaySpeed={5000}

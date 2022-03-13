@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Header } from "components";
 
 export default function NotFound() {
 	return (
@@ -11,10 +10,3 @@ export default function NotFound() {
 		</div>
 	);
 }
-
-NotFound.getLayout = page => (
-	<>
-		<Header />
-		{page}
-	</>
-);

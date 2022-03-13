@@ -8,3 +8,4 @@ export { default as CommentsForm } from "./CommentsForm.jsx";
 export { default as Comments } from "./Comments.jsx";
 export { default as CarouselFeaturedPostCard } from "./CarouselFeaturedPostCard.jsx";
 export { default as CarouselFeaturedPosts } from "./CarouselFeaturedPosts.jsx";
+export { default as AdjacentPosts } from "./AdjacentPosts.jsx";
