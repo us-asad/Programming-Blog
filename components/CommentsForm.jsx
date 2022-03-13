@@ -101,8 +101,7 @@ export default function CommentsForm({ slug }) {
 						<label
 							htmlFor="storeData"
 							className="ml-2 text-gray-500 cursor-pointer"
-							children="Save my name, email in this browser for the next time I comment."
-						/>
+						>Save my name, email in this browser for the next time I comment.</label>
 					</div>
 				</div>
 				{error && <p className="text-red-500">{error}</p>}
@@ -110,9 +109,8 @@ export default function CommentsForm({ slug }) {
 					<button
 						type="button"
 						className="transition duration-50 ease hover:bg-indigo-900 inline-block bg-indigo-400 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
-						children="Comment"
 						onClick={handleComment}
-					/>
+					>Comment</button>
 					{showSuccessMessage && <p className="mt-2 text-green-500">Comment submitted for review</p>}
 				</div>
 		</div>

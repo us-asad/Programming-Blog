@@ -17,7 +17,7 @@ export default function PostWidget({ categories, slug }) {
 				.then(res => setWidgetPosts(res))
 				.catch(err => console.error("Get Recent Posts Error! ",err));
 		}
-	},[slug]);
+	},[slug, categories]);
 
 	if (!widgetPosts.length) return <></>;
 

@@ -43,9 +43,9 @@ export default function PostCard({ post }) {
 			</p>
 			<div className="text-center">
 				<Link href={`/post/${slug}`}>
-					<span className="transition duration-500 transfrom hover:-translate-y-1 inline-block bg-indigo-800 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
+					<a className="transition duration-500 transfrom hover:-translate-y-1 inline-block bg-indigo-800 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
 						Continue Reading
-					</span>
+					</a>
 				</Link>
 			</div>
 		</div>

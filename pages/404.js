@@ -1,0 +1,20 @@
+import Link from "next/link";
+import { Header } from "components";
+
+export default function NotFound() {
+	return (
+		<div className="h-40 text-white flex justify-center items-center flex-col">
+			<h2 className="text-lg sm:text-3xl">Could not find this page &#128557;</h2>
+			<Link href="/">
+				<a className="mt-4 text-sm sm:text-xl text-blue-100 underline hover:text-blue-300 transition duration-50">Back to Home page</a>
+			</Link>
+		</div>
+	);
+}
+
+NotFound.getLayout = page => (
+	<>
+		<Header />
+		{page}
+	</>
+);

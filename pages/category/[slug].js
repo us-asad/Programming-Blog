@@ -2,7 +2,7 @@ import { getCategoryPost } from "services";
 import { PostWidget, PostCard, Categories } from "components";
 
 export default function CategoryPosts({ posts }) {
-	if (!posts.length) return <div className="w-full h-full text-3xl flex justify-center items-center text-white">Couldn't find any posts in this category &#128557;</div>
+	if (!posts.length) return <div className="w-full h-full text-3xl flex justify-center items-center text-white">Could not find any posts in this category &#128557;</div>
 
 	return (
 		<div className="container px-10 mx-auto mb-8 grid grid-cols-1 lg:grid-cols-12 gap-12">
