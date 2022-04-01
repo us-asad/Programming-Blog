@@ -8,9 +8,9 @@
   <p align="center">
     <a href="https://programming-blog-ecru.vercel.app/">View Demo</a>
     ·
-    <a href="https://github.com/UAsad99/YouTube-Clone/issues">Report Bug</a>
+    <a href="https://github.com/UAsad99/Programming-Blog/issues">Report Bug</a>
     ·
-    <a href="https://github.com/UAsad99/YouTube-Clone/issues">Request Feature</a>
+    <a href="https://github.com/UAsad99/Programming-Blog/issues">Request Feature</a>
   </p>
 </div>
 
